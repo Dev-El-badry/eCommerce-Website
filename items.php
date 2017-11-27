@@ -6,7 +6,7 @@
 
 	include 'init.php';
 
-	$itemid = isset($_GET['itemid']) && is_numeric($_GET['itemid']) ? intval($_GET['itemid']) : 0 ;
+	//$itemid = isset($_GET['itemid']) && is_numeric($_GET['itemid']) ? intval($_GET['itemid']) : 0 ;
 
 	$stmt = $con->prepare("SELECT items.*, categories.Name AS Cat_Name, users.Username
 								 FROM
